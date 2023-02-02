@@ -1,0 +1,12 @@
+/**
+ * O arquivo .sequelizesrc, serve para indicar ao sequelize
+ *  o caminho para o arquivo das credenciais de acesso ao banco de dados
+ * (Por padrão o Sequelize busca um arquivo de nome: config.json, dentro da pasta config)
+ * (Caminho Padrão: config/config.json)
+ */
+
+const path = require("path");
+
+module.exports = {
+  config: path.resolve(__dirname, "config", "database.js"),
+};
