@@ -1,11 +1,12 @@
 //Conexão com o banco de Dados
 
 const Sequelize = require("sequelize");
-const dbConfig = require("../../config/database");
+const dbConfig = require("../config/database");
 
-const User = require("../../models/User");
-const Addresses = require("../../models/Addresses");
-const Tech = require("../../models/Tech");
+//Models
+const User = require("../models/User");
+const Addresses = require("../models/Addresses");
+const Tech = require("../models/Tech");
 
 const connection = new Sequelize(dbConfig);
 

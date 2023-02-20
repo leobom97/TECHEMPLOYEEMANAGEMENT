@@ -1,5 +1,7 @@
 const express = require("express");
 const routes = express.Router();
+
+//Controllers
 const UserController = require("../controllers/UserController");
 const AddressesController = require("../controllers/AddressesController");
 const TechController = require("../controllers/TechController");
@@ -18,6 +20,7 @@ routes.get("/users/:user_id/techs", TechController.index);
 routes.post("/user/:user_id/tech", TechController.store);
 routes.delete("/user/:user_id/tech", TechController.delete);
 
+//Reports
 routes.get("/report", ReportController.show);
 
 module.exports = routes;
